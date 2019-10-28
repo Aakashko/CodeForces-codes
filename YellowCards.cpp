@@ -25,10 +25,11 @@ Print two integers — the minimum and the maximum number of players that could 
 #define ll  long long
 using namespace std;
 int main()
-{
+{	
     ll a1,a2,k1,k2,n,i;
     cin>>a1>>a2>>k1>>k2>>n;
-    ll min=max(n-((a1*(k1-1))+(a2*(k2-1))),0LL);
+    ll temp = 0LL;
+    ll min=max(n-((a1*(k1-1))+(a2*(k2-1))),temp);
     ll max =0;
     if(k1<k2)
     {
